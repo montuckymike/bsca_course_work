@@ -7,7 +7,35 @@ function generateDeck(){
       return tempDeck;
 }
 
+function deckMap(deckIn){
+    for (var i = 0; i<deckIn.length; i++){
+      var card = "";
+
+
+      if (deckIn[i]<=13){
+        deckIn[i] = deckIn[i] + "H";
+      }
+      else if (deckIn[i]<=26) {
+            // condition         if   true              or  false
+        deckIn[i] = (deckIn[i]%13 !== 0) ? (deckIn[i]%13) + "S" : "13S";
+      }
+      else if (deckIn[i]<=39) {
+        deckIn[i] = (deckIn[i]%13 !== 0) ? (deckIn[i]%13) + "C" : "13C";
+      }
+      else if (deckIn[i]<=52) {
+        deckIn[i] = (deckIn[i]%13 !== 0) ? (deckIn[i]%13) + "D" : "13D";
+      }
+      else {
+      }
+      console.log("My new deck: ",deckIn);
+    }
+}
+
 var deck = generateDeck();
+
+deckMap(deck);
+
+
 //console.log("My deck is: ",deck);
 
 function shuffle (deckIn){
