@@ -21,25 +21,38 @@
           // letter = "B";
           // nameSearch(names);
 
-
-// challenge Two
+// 					var names = ["Aaron", "Anthony", "Al", "Bob", "Carl", "Cindy", "Derek", "Don", "Frank", "Percil", "Taryn"];
+// 					function searchNames(names, letter) {
+// 						for (var i=0; i<names.length; i++){
+// 							if(names[i][0] === letter){
+// 								console.log("This name starts with ",letter,": ", names[i])
+// 							}
+// 						}
+// 					}
+// searchNames(names,"A");
+//
+// // challenge Two
 // loop through the numbers array, and print numbers greater than 10
 // bonus: Allow your function to accept the comparison Number, as a parameter
 
 
-
+							//
               // var numbers = [1, 3, 5, 6, 7, 14, 17, 18, 19 ,25, 26, 36, 39, 45, 53, 67, 73, 84, 99]
-              // var greaterNum = 10;
-              //
-              // function greaterThan (){
+							//
+
+							// instead of creating a global var greaterNum (which I inittialy did) pass the greaterNum as an
+							// arguement in the function which will make it easier to pass in different results without having it
+							// be a global var
+
+
+              // function greaterThan (numbers, greaterNum){
               //   for (var j=0; j<numbers.length; j++){
               //     if (numbers[j]>=greaterNum)
               //     console.log("This number is greater/equal to ",greaterNum,": ",numbers[j])
               //   }
               // }
-              //
-              // greaterNum = 50;
-              // greaterThan(numbers);
+							//
+              // greaterThan(numbers,50);
 
 
 
@@ -47,22 +60,17 @@
 // loop through the numbers array, and print numbers greater than 10, but less than 50
 
         // var numbers = [1, 3, 5, 6, 7, 14, 17, 18, 19 ,25, 26, 36, 39, 45, 53, 67, 73, 84, 99]
-        // var greaterNum = 10;
-        // var lesserNum = 50;
-        //
-        // function greaterThan (){
+        // //var greaterNum = 10; don't put these here
+        // //var lesserNum = 50; don't put there here
+				//
+        // function greaterThan (numbers,greaterNum,lesserNum){
         //   for (var j=0; j<numbers.length; j++){
         //     if (numbers[j]>=greaterNum  && numbers[j]<= lesserNum)
-        //
-        // //add some sort of else if thingy here to accomplish this - - - -
-        //
-        //
         //     console.log("This number is greater/equal to ",greaterNum,", but less/equal to: ",lesserNum,": ",numbers[j])
         //   }
         // }
-        // lesserNum=50;
-        // greaterNum = 10;
-        // greaterThan(numbers);
+				//
+        // greaterThan(numbers, 11, 51);
 
 
 
@@ -70,28 +78,36 @@
 
 
 // bonus: Only print the odd numbers that meet these conditions
-
+							//
               // var numbers = [1, 3, 5, 6, 7, 14, 17, 18, 19 ,25, 26, 36, 39, 45, 53, 67, 73, 84, 99]
               // var greaterNum = 10;
               // var lesserNum = 50;
-              //
-              // function greaterThan (){
+							//
+              // function greaterThan (numbers, greaterNum, lesserNum){
               //   for (var j=0; j<numbers.length; j++){
               //     if (numbers[j]>=greaterNum  && numbers[j]<= lesserNum && numbers[j]%2 !==0)
-              //
-              // //add some sort of else if thingy here to accomplish this - - - -
-              //
-              //
               //     console.log("This number is greater/equal to ",greaterNum,", but less/equal to: ",lesserNum,", and is Odd: ",numbers[j])
               //   }
               // }
-              // lesserNum=50;
-              // greaterNum = 10;
-              // greaterThan(numbers);
+              // greaterThan(numbers, 10, 50);
 
+//// FIZZ BUZZ //////
 
-
-
+			// function fizzBuzz(){
+			// 	for (var i=1; i<=100; i++){
+			// 		if(i%5 === 0 && i%3 === 0){
+			// 			console.log("fizz buzz ",i)
+			// 		}
+			// 		else if (i%5 == 0){
+			// 			console.log("fizz ",i);
+			// 		}
+			// 		else if (i%3 === 0){
+			// 			console.log("buzz ",i);
+			// 		}
+			// 	}
+			// }
+			//
+			// fizzBuzz();
 
 /// i%2 !==0 gives odd numbers back!!!!! i%2 == 0 gives EVEN
 
@@ -103,7 +119,7 @@
 
 
         // var randomItems = [1, "Hello", 5, "GoodBye", 7, 14, "Aloha", 18, 19 ,"Adios", 26, 36, "Ciao"];
-        //
+				//
         // function findNums (){
         //   for (v=0; v<randomItems.length; v++){
         //     if (!isNaN(randomItems[v])){
@@ -111,10 +127,11 @@
         //     }
         //   }
         // }
-        // findNums(randomItems);
-        //
+				//
+				// findNums(randomItems);
+
         // var randomItems = [1, "Hello", 5, "GoodBye", 7, 14, "Aloha", 18, 19 ,"Adios", 26, 36, "Ciao"];
-        //
+				//
         // function findNums (){
         //   for (v=0; v<randomItems.length; v++){
         //     if (isNaN(randomItems[v])){
@@ -127,7 +144,7 @@
 
 // challenge Five
 // loop through the array of customer objects, and print ONLY their names
-              //
+
               // var customers = [
               // 	{name: "Aaron", email: "aaron@gmail.com", tier: "gold", paid: true},
               //   {name: "Anthony", email: "anthony@gmail.com", tier: "silver", paid: true},
@@ -155,40 +172,40 @@
               // 	{name: "Carl", email: "carl@gmail.com", tier: "bronze", paid: true},
               // 	{name: "Cindy", email: "cindy@gmail.com", tier: "gold", paid: true}
               // ];
-              // var letter = "";
-              //
-              // function findNames (customerName){
+							//
+              // function findNames (customerName, letter){
               //   for (var i=0; i<customers.length;i++){
               //     if((customerName[i].name).startsWith(letter)){
               //       console.log("Should be a name that starts with ",letter,": ",customerName[i].name)
               //     }
               //   }
               // }
-              // letter = "A";
-              // findNames(customers);
+              // findNames(customers, "B");
 
 
 // challenge Six
 // loop through the array of customers, and print ONLY customers that are 'gold' and 'paid'
-var customers = [
-	{name: "Aaron", email: "aaron@gmail.com", tier: "gold", paid: false},
-  // I changed Aaron to paid: fales to see if it worked, and it did!
-  {name: "Anthony", email: "anthony@gmail.com", tier: "silver", paid: true},
-	{name: "Al", email: "al@gmail.com", tier: "bronze", paid: false},
-	{name: "Bob", email: "bob@gmail.com", tier: "gold", paid: true},
-	{name: "Carl", email: "carl@gmail.com", tier: "bronze", paid: true},
-	{name: "Cindy", email: "cindy@gmail.com", tier: "gold", paid: true}
-];
 
 
-function findNames (customer){
-  for (var i=0; i<customers.length;i++){
-    if(customer[i].tier === "gold" && customer[i].paid === true ){
-      console.log("The following customers have Paid & are Gold: ",customer[i].name)
-    }
-  }
-}
+			var customers = [
+				{name: "Aaron", email: "aaron@gmail.com", tier: "gold", paid: false},
+			  // I changed Aaron to paid: fales to see if it worked, and it did!
+			  {name: "Anthony", email: "anthony@gmail.com", tier: "silver", paid: true},
+				{name: "Al", email: "al@gmail.com", tier: "bronze", paid: false},
+				{name: "Bob", email: "bob@gmail.com", tier: "gold", paid: true},
+				{name: "Carl", email: "carl@gmail.com", tier: "bronze", paid: true},
+				{name: "Cindy", email: "cindy@gmail.com", tier: "gold", paid: true}
+			];
 
-findNames(customers);
+
+			function findNames (customer){
+			  for (var i=0; i<customers.length;i++){
+			    if(customer[i].tier === "gold" && customer[i].paid === true ){
+			      console.log("The following customers have Paid & are Gold: ",customer[i].name)
+			    }
+			  }
+			}
+
+			findNames(customers);
 
 // bonus: Return a completely new array that meets these conditions.
