@@ -33,7 +33,7 @@ var b10 = new Bird("falcated duck","duck","male","http://www.birdphotography.com
 
 console.log(b3, b4, b5, b6, b7, b8, b9, b10);
 
-var title = "Birds Collection";
+var title = "Birds ExchangeOgram";
 
 var birds =  new Array();
 birds.push(b3, b4, b5, b6, b7, b8, b9, b10);
@@ -49,6 +49,17 @@ var app = new Vue({
     species: undefined,
     gender: undefined,
     img: undefined
+  },
+  methods: {
+    addBird: function (){
+      var newBird = new Bird(this.name, this.species, this.gender, this.img);
+      this.birds.push(newBird);
+      console.log(this.birds);
+      this.name="";
+      this.species="";
+      this.gender="";
+      this.img="";
+    }
   }
 });
 
