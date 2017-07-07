@@ -22,7 +22,7 @@ function Bird (name, species, gender, img, color, predator){
   this.color = color;
 }
 
-var b3 = new Bird("brown hheaded cowbird", "cowbird", "male", "https://www.allaboutbirds.org/guide/PHOTO/LARGE/brown_headed_cowbird_4.jpg","brown");
+var b3 = new Bird("brown headed cowbird", "cowbird", "male", "https://www.allaboutbirds.org/guide/PHOTO/LARGE/brown_headed_cowbird_4.jpg","brown");
 var b4 = new Bird("crested auklet","auklet","male","http://www.birdphotography.com/species/photos/crau-1.jpg","black");
 var b5 = new Bird("mexican chickadee","chickadee","female","http://www.birdphotography.com/species/photos/mech-1.jpg","gray","Wolf");
 var b6 = new Bird("pelagic cormorant","cormorant","male","http://www.birdphotography.com/species/photos/peco-5.jpg","green");

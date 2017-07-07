@@ -28,12 +28,76 @@ img.brandImg {
 }
 
 .jumboHeader {
-  margin: auto;
   width: 50%;
+  margin: auto;
 }
 
 .jumboHeaderText {
   text-align: center;
 
   background: rgba(87, 85, 85, 0.7);
+}
+
+.birdNameH3 {
+  font-family: "Helvetica Neue";
+	font-size: 24px;
+	font-style: normal;
+	font-variant: small-caps;
+	font-weight: 100;
+	line-height: 24px;
+  text-align: center;
+}
+
+.birdP {
+  text-align: center;
+  font-family: "Helvetica Neue";
+	font-size: 14px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 20px;
+}
+
+.button {
+  /* How do I center these button!
+  */
+  width: 50%;
+  margin: auto;
+}
+
+.thumbnail {
+  padding-top: 25px;
+
+}
+
+.bg2 {
+  background: url("https://media.giphy.com/media/3oAt1NNFH378qnqPKM/giphy.gif") no-repeat center center;
+  position: sticky;
+  width: 100%;
+  height: 350px; /*same height as jumbotron */
+  top:0;
+  left:0;
+  z-index: -1;
+  background-size: cover;
+}
+
+.jumbotron2 {
+  height: 350px;
+  color: white;
+  text-shadow: #444 0 1px 1px;
+  background:transparent;
+}
+
+.jumboHeader2 {
+  width: 50%;
+  margin: auto;
+}
+
+.jumboHeaderText2 {
+  text-align: center;
+  background: rgba(87, 85, 85, 0.7);
+}
+
+.formDiv {
+  position: relative;
 }
