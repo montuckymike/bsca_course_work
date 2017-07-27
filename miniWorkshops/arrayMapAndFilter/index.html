@@ -58,30 +58,35 @@
 
 <div id="app">
 
-  <div class="bg"></div>
-  <div class="jumbotron">
-    <div class="jumboHeader">
-      <div class="jumboHeaderText">
+  <div class="parallax">
+  <div class="group">
+    <div class="layer back">
+    </div>
+      <div class="layer front">
+        <div class="title">
         <h1>{{ title }}</h1>
         <p class="lead">A curration of baseball players</p>
       </div>
     </div>
   </div>
 
-    <div>
-      <h1 class="mainTitle"> Player Data</h1>
+    <div class="group">
+      <div class="section">
+        <h1 class="mainTitle"> Player Data</h1>
+      </div>
 
-<div class ="flex-container">
-        <div class="flex-item" v-for="b in players">
-          <h3>{{ b.name }}</h3>
-          <p>{{ b.HR }}</p>
-          <p>{{ b.team }}</p>
-          <img class="playerImg" :src="b.img" alt="">
-        </div>
-</div>
-
+      <div class ="flex-container">
+              <div class="flex-item" v-for="b in players">
+                <h3>{{ b.name }}</h3>
+                <p>{{ b.HR }}</p>
+                <p>{{ b.team }}</p>
+                <img class="playerImg" :src="b.img" alt="">
+              </div>
+      </div>
     </div>
 
+
+  </div>
 </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->

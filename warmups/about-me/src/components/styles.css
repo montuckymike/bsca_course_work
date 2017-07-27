@@ -1,0 +1,57 @@
+.main-app {
+  width: 50%;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+.app-header {
+  margin: 0;
+  padding: 0;
+  color: red;
+}
+
+.app-header {
+  float: left;
+  text-align: center;
+  width: 100%;
+  font-size: 2em;
+}
+
+.nav-bar {
+  width: 100%;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  display: block;
+  float: left;
+}
+
+.nav-bar li {
+  list-style-type: none;
+  display: inline;
+  margin-left: 6.25%;
+  margin-right: 6.25%;
+  text-align: center;
+  font-size: 2em;
+  cursor: pointer;
+}
+
+.nav-bar li:hover {
+  text-decoration: underline;
+}
+
+.content-sec {
+  width: 75%;
+  display: block;
+  float: left;
+  font-size: 2em;
+  margin-left: 12.5%;
+  margin-right: 12.5%;
+}
+
+.sec-header {
+
+}
+
+.contact-sec {
+  text-align: center;
+}
